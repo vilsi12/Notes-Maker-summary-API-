@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "60dfa8e5-b646-40bb-8f30-928d19a2979e",
+		"name": "Summarizer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"text\": \"Summarization is a process of automatically condensing and rewriting a large chunk of text to create a small, crisp summary. Some systems for automatic summarization use full text in order to identify important sentences. Other systems use abstracts, key sentences or other summary-like structures when the full text is not available.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/summarize/text",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"summarize",
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "video",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"video\": \"oOLMvVTPWAE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/summarize/video",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"summarize",
+						"video"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"url\": \"https://owlcation.com/academia/How-to-Write-a-Summary\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/summarize/url",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"summarize",
+						"url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "src_file",
+							"type": "file",
+							"src": "/Users/raghavgupta/learning/aws-learning/stepfn/theory.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/summarize/file",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"summarize",
+						"file"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

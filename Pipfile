@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+youtube-transcript-api = "*"
+requests = "*"
+nlpcloud = "*"
+gunicorn = "==20.0.4"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
