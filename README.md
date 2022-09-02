@@ -1,5 +1,5 @@
 # Notes-Maker-summary-API
-API deploy to heroku
+API host to heroku
 Youtube to Summary
 
 Website to Summary
